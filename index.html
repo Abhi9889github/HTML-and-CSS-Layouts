@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #efb6f2;
+      }
+
+      .container {
+        height: 800px;
+        max-width: 1200px;
+        background-color: rgb(150, 67, 233);
+        margin: 150px;
+        flex-direction: column;
+      }
+      .box_container1 {
+        display: flex;
+      }
+      .inside_box {
+        height: 200px;
+        width: 100%;
+        background-color: blue;
+      }
+      .box1 {
+        background-color: #f6cef8;
+      }
+      .box2 {
+        background-color: rgb(109, 163, 210);
+      }
+      .box3 {
+        background-color: aquamarine;
+      }
+      .box4 {
+        background-color: #f17cf7;
+      }
+      .box5 {
+        background-color: #ed29f7;
+      }
+      .box6 {
+        background-color: #8929f7;
+      }
+      .box7 {
+        background-color: #ad69fa;
+      }
+      .box8 {
+        background-color: #cb9efe;
+      }
+@media screen and (width > 1200px){
+    .container{
+        margin:80px auto;
+
+    }
+}
+@media screen and (width<1200px) and (width > 450px){
+    .container{
+        margin: 40px 24px;
+}
+
+}
+@media screen and (width < 450px){
+    .container{
+        margin: 24px 16px;
+    }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="box_container1">
+        <div class="inside_box box1"></div>
+        <div class="inside_box box2"></div>
+      </section>
+      <section class="box_container1">
+        <div class="inside_box box3"></div>
+        <div class="inside_box box4"></div>
+      </section>
+      <section class="box_container1">
+        <div class="inside_box box5"></div>
+        <div class="inside_box box6"></div>
+      </section>
+      <section class="box_container1">
+        <div class="inside_box box7"></div>
+        <div class="inside_box box8"></div>
+      </section>
+    </div>
+  </body>
+</html>
